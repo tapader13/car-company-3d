@@ -4,7 +4,7 @@ import { Suspense } from 'react';
 
 const Navbar = () => {
   return (
-    <div className='flex h-40 flex-row justify-between items-center py-8'>
+    <div className=' flex h-40 flex-col sm:flex-row justify-between items-center py-8'>
       <ul>
         <li>
           <div className='relative h-40 w-60'>

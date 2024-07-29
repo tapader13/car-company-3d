@@ -22,8 +22,11 @@ const Contact = () => {
       );
   };
   return (
-    <div id='contact' className='flex h-screen mt-72'>
-      <div className='w-1/2 pl-8 pt-8 pb-8 mt-12 ml-20'>
+    <div
+      id='contact'
+      className='flex sm:flex-row flex-col sm:h-screen h-[60vh] sm:mt-72 mt-10'
+    >
+      <div className='sm:w-1/2 absolute sm:relative w-full sm:pl-8 sm:pt-8 sm:pb-8 mt-12 sm:ml-20'>
         <div className='relative w-56 m-auto mb-10'>
           <h1 className=' text-white font-bold text-4xl text-center after:absolute after:content-[""] after:h-1 after:w-28 after:bg-white after:left-10 after:bottom-[-14px]'>
             Contact Us
@@ -75,7 +78,7 @@ const Contact = () => {
         </form>
         <p className='text-green-500'>{succ && 'message sent successfully'}</p>
       </div>
-      <div className='w-1/2  '>
+      <div className='sm:w-1/2 w-full  '>
         <MapChart />
       </div>
     </div>

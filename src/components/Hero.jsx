@@ -9,8 +9,8 @@ const Hero = () => {
   return (
     <div className='max-w-[1400px] m-auto'>
       <Navbar />
-      <div className='flex items-center justify-between gap-5 h-[70vh]'>
-        <div className='w-1/2'>
+      <div className='flex flex-col sm:flex-row items-center justify-between gap-5 h-[70vh] mt-32 sm:mt-2'>
+        <div className='sm:w-1/2 w-full '>
           <h1 className='text-white text-3xl font-bold mb-7'>
             Discover the Elegance and Performance of the New Mercedes-Benz
           </h1>
@@ -23,7 +23,7 @@ const Hero = () => {
             Learn More
           </button>
         </div>
-        <div className='w-1/2 h-full'>
+        <div className='sm:w-1/2 sm:h-full  w-full'>
           <Canvas>
             <Stage environment='city' intensity={0.6}>
               <CarTwo />

@@ -26,8 +26,8 @@ const Highlights = () => {
           Top Seller
         </h1>
       </div>
-      <div className='flex mt-10 flex-row'>
-        <div className='w-[40%]'>
+      <div className='flex mt-10 sm:flex-row flex-col'>
+        <div className='sm:w-[40%] w-full'>
           <h1 className='text-white text-3xl font-bold tracking-tighter text-center'>
             Discover the Ultimate Driving Experience
           </h1>
@@ -54,12 +54,12 @@ const Highlights = () => {
         <div className='w-[60%] text-right'>
           <button
             onClick={handleChangeColor}
-            className='h-10 w-10 bg-white rounded-full cursor-pointer z-10'
+            className='h-10 w-10 mt-10 sm:mt-0 bg-white rounded-full cursor-pointer z-10'
             style={{ position: 'relative', zIndex: 10 }}
           ></button>
         </div>
       </div>
-      <div className='flex flex-row justify-center w-full h-[500px] absolute top-4'>
+      <div className='flex flex-row justify-center w-full h-[500px] sm:absolute sm:top-4'>
         <Canvas>
           <Suspense fallback={null}>
             <Stage environment='city' intensity={0.3}>
